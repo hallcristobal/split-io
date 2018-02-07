@@ -1,0 +1,70 @@
+{
+	"runs": [
+		{
+			"id": 11994,
+			"path": "/996",
+			"name": "Super Mario Sunshine Any%",
+			"program": "livesplit",
+			"image_url": null,
+			"created_at": "2015-08-31T00:46:55.014Z",
+			"updated_at": "2017-10-08T22:27:05.376Z",
+			"video_url": null,
+			"attempts": 124,
+			"sum_of_best": 5260.0,
+			"user": {
+				"twitch_id": 29798286,
+				"name": "glacials",
+				"avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4258dbb17db90404-profile_image-300x300.jpeg",
+				"created_at": "2014-03-09T19:00:43.640Z",
+				"updated_at": "2017-12-10T18:24:33.781Z"
+			},
+			"game": {
+				"id": 15,
+				"name": "Super Mario Sunshine",
+				"shortname": "sms",
+				"created_at": "2014-04-18T06:28:59.764Z",
+				"updated_at": "2016-03-29T00:01:28.981Z"
+			},
+			"category": {
+				"id": 852,
+				"name": "Any%",
+				"created_at": "2015-01-08T02:53:19.867Z",
+				"updated_at": "2016-03-28T01:07:22.737Z"
+			},
+			"time": 0.0
+		},
+		{
+			"id": 1686,
+			"path": "/1au",
+			"name": "Super Mario Sunshine Any%",
+			"program": "livesplit",
+			"image_url": null,
+			"created_at": "2014-07-19T17:35:06.327Z",
+			"updated_at": "2017-10-08T22:51:08.433Z",
+			"video_url": "https://www.twitch.tv/glacials/v/29447340",
+			"attempts": 109,
+			"sum_of_best": 5266.0,
+			"user": {
+				"twitch_id": 29798286,
+				"name": "glacials",
+				"avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4258dbb17db90404-profile_image-300x300.jpeg",
+				"created_at": "2014-03-09T19:00:43.640Z",
+				"updated_at": "2017-12-10T18:24:33.781Z"
+			},
+			"game": {
+				"id": 15,
+				"name": "Super Mario Sunshine",
+				"shortname": "sms",
+				"created_at": "2014-04-18T06:28:59.764Z",
+				"updated_at": "2016-03-29T00:01:28.981Z"
+			},
+			"category": {
+				"id": 852,
+				"name": "Any%",
+				"created_at": "2015-01-08T02:53:19.867Z",
+				"updated_at": "2016-03-28T01:07:22.737Z"
+			},
+			"time": 0.0
+		}
+	]
+}

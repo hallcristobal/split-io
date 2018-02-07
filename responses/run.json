@@ -1,0 +1,122 @@
+{
+	"run": {
+		"id": 438,
+		"path": "/c6",
+		"name": "(no title)",
+		"program": "wsplit",
+		"image_url": null,
+		"created_at": "2014-03-09T19:07:46.483Z",
+		"updated_at": "2017-12-21T19:06:53.013Z",
+		"video_url": null,
+		"splits": [
+			{
+				"name": "Rotatatron",
+				"duration": 501.7,
+				"finish_time": 501.7,
+				"best": {
+					"duration": 462.85
+				},
+				"history": [],
+				"gold": false,
+				"skipped": false,
+				"reduced": false
+			},
+			{
+				"name": "Captain Jelly",
+				"duration": 754.909,
+				"finish_time": 1256.61,
+				"best": {
+					"duration": 719.44
+				},
+				"history": [],
+				"gold": false,
+				"skipped": false,
+				"reduced": false
+			},
+			{
+				"name": "Frigate Orcan",
+				"duration": 762.54,
+				"finish_time": 2019.15,
+				"best": {
+					"duration": 762.54
+				},
+				"history": [],
+				"gold": true,
+				"skipped": false,
+				"reduced": false
+			},
+			{
+				"name": "Refreshinator",
+				"duration": 681.27,
+				"finish_time": 2700.42,
+				"best": {
+					"duration": 681.27
+				},
+				"history": [],
+				"gold": true,
+				"skipped": false,
+				"reduced": false
+			},
+			{
+				"name": "Admiral Jelly",
+				"duration": 1054.71,
+				"finish_time": 3755.13,
+				"best": {
+					"duration": 1054.71
+				},
+				"history": [],
+				"gold": true,
+				"skipped": false,
+				"reduced": false
+			},
+			{
+				"name": "Frigate Skullian",
+				"duration": 973.09,
+				"finish_time": 4728.22,
+				"best": {
+					"duration": 973.09
+				},
+				"history": [],
+				"gold": true,
+				"skipped": false,
+				"reduced": false
+			},
+			{
+				"name": "Egg Nega Wisp",
+				"duration": 310.8,
+				"finish_time": 5039.02,
+				"best": {
+					"duration": 310.8
+				},
+				"history": [],
+				"gold": true,
+				"skipped": false,
+				"reduced": false
+			},
+			{
+				"name": "Epilogue",
+				"duration": 44.719,
+				"finish_time": 5083.74,
+				"best": {
+					"duration": 44.719
+				},
+				"history": [],
+				"gold": true,
+				"skipped": false,
+				"reduced": false
+			}
+		],
+		"attempts": 9,
+		"sum_of_best": 5009.419999,
+		"user": {
+			"twitch_id": 29798286,
+			"name": "glacials",
+			"avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/4258dbb17db90404-profile_image-300x300.jpeg",
+			"created_at": "2014-03-09T19:00:43.640Z",
+			"updated_at": "2017-12-10T18:24:33.781Z"
+		},
+		"game": null,
+		"category": null,
+		"time": 0.0
+	}
+}
