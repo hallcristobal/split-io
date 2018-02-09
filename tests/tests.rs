@@ -1,7 +1,7 @@
 extern crate splits_io;
 
 mod tests {
-    use splits_io::get_uri;
+    use splits_io::uris::get_uri;
 
     #[test]
     fn get_uri_test() {

@@ -1,18 +1,34 @@
-use {DateTime, User};
-use serde_json::{from_str, from_value, Value};
+use {DateTime, User, Game, Category};
+use serde_json::{from_str, Value};
 
 type Duration = f32;
 
-
 #[derive(Serialize, Deserialize)]
 pub struct Runs {
-	runs: Vec<Run>
+    runs: Vec<Run>,
 }
 
 impl Runs {
-	pub fn parse(raw: &str) -> Result<Run, ()> {
-		Ok(from_str(raw).unwrap())
-	}
+    pub fn parse(raw: &str) -> Result<Vec<Run>, ()> {
+        let v: Value = from_str(raw).unwrap();
+        if let Some(_) = v.get("runs") {
+            let v: Runs = from_str(raw).unwrap();
+            Ok(v.runs)
+        } else {
+            let v: PbObject = from_str(raw).unwrap();
+            Ok(v.pbs)
+        }
+    }
+}
+
+#[derive(Serialize, Deserialize)]
+struct RunObject {
+    run: Run
+}
+
+#[derive(Serialize, Deserialize)]
+struct PbObject {
+    pbs: Vec<Run>
 }
 
 #[derive(Serialize, Deserialize)]
@@ -30,17 +46,15 @@ pub struct Run {
     attempts: usize,
     sum_of_best: Duration,
     user: Option<User>,
-    game: Option<String>,
-    category: Option<String>,
+    game: Option<Game>,
+    category: Option<Category>,
     time: Duration,
 }
 
 impl Run {
     pub fn parse(raw: &str) -> Result<Run, ()> {
-        let v: Run = from_str(raw)
-            .map(|v: Value| from_value(v["run"].clone()).unwrap())
-            .unwrap();
-        Ok(v)
+        let v: RunObject = from_str(raw).unwrap();
+        Ok(v.run)
     }
 }
 
@@ -50,7 +64,7 @@ pub struct Segment {
     duration: Duration,
     finish_time: Duration,
     best: Best,
-    history: Vec<i32>,
+    history: Vec<f32>,
     gold: bool,
     skipped: bool,
     reduced: bool,
