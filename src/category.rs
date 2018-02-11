@@ -1,9 +1,9 @@
-use DateTime;
+use {DateTime, Parse};
 use serde_json::from_str;
 
 #[derive(Serialize, Deserialize)]
 struct CategoryObject {
-    category: Category
+    category: Category,
 }
 
 #[derive(Serialize, Deserialize)]
@@ -14,8 +14,8 @@ pub struct Category {
     updated_at: DateTime,
 }
 
-impl Category {
-    pub fn parse(raw: &str) -> Result<Category, ()> {
+impl Parse<Category> for Category {
+    fn parse(raw: &str) -> Result<Category, ()> {
         let v: CategoryObject = from_str(raw).unwrap();
         Ok(v.category)
     }

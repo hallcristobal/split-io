@@ -44,7 +44,10 @@ pub fn get_category_uri(game_id: &str, category_id: &str) -> String {
 ///
 /// This endpoint returns a `Vec<Run>`.
 pub fn get_category_runs_uri(game_id: &str, category_id: &str) -> String {
-    get_uri(&format!("/games/{}/categories/{}/runs", game_id, category_id))
+    get_uri(&format!(
+        "/games/{}/categories/{}/runs",
+        game_id, category_id
+    ))
 }
 
 pub fn get_user_uri<S: Into<String>>(user_id: S) -> String {
@@ -97,4 +100,3 @@ pub fn get_user_game_category_prediction_uri<S: Into<String>>(
         category_id.into()
     ))
 }
-

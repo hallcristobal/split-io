@@ -1,4 +1,4 @@
-use {DateTime, User, Game, Category};
+use {Category, DateTime, Game, Parse, User};
 use serde_json::{from_str, Value};
 
 type Duration = f32;
@@ -8,8 +8,8 @@ pub struct Runs {
     runs: Vec<Run>,
 }
 
-impl Runs {
-    pub fn parse(raw: &str) -> Result<Vec<Run>, ()> {
+impl Parse<Vec<Run>> for Runs {
+    fn parse(raw: &str) -> Result<Vec<Run>, ()> {
         let v: Value = from_str(raw).unwrap();
         if let Some(_) = v.get("runs") {
             let v: Runs = from_str(raw).unwrap();
@@ -23,12 +23,12 @@ impl Runs {
 
 #[derive(Serialize, Deserialize)]
 struct RunObject {
-    run: Run
+    run: Run,
 }
 
 #[derive(Serialize, Deserialize)]
 struct PbObject {
-    pbs: Vec<Run>
+    pbs: Vec<Run>,
 }
 
 #[derive(Serialize, Deserialize)]
@@ -51,8 +51,8 @@ pub struct Run {
     time: Duration,
 }
 
-impl Run {
-    pub fn parse(raw: &str) -> Result<Run, ()> {
+impl Parse<Run> for Run {
+    fn parse(raw: &str) -> Result<Run, ()> {
         let v: RunObject = from_str(raw).unwrap();
         Ok(v.run)
     }

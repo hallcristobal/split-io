@@ -5,7 +5,10 @@ mod uris {
 
     #[test]
     fn get_search_uri_test() {
-        assert_eq!(&get_search_uri("sonic"), "https://splits.io/api/v3/games?search=sonic");
+        assert_eq!(
+            &get_search_uri("sonic"),
+            "https://splits.io/api/v3/games?search=sonic"
+        );
     }
 
     #[test]
@@ -15,12 +18,18 @@ mod uris {
 
     #[test]
     fn get_game_runs_uri_test() {
-        assert_eq!(&get_game_runs_uri("255"), "https://splits.io/api/v3/games/255/runs");
+        assert_eq!(
+            &get_game_runs_uri("255"),
+            "https://splits.io/api/v3/games/255/runs"
+        );
     }
 
     #[test]
     fn get_category_uri_test() {
-        assert_eq!(&get_category_uri("255", "14"), "https://splits.io/api/v3/games/255/categories/14");
+        assert_eq!(
+            &get_category_uri("255", "14"),
+            "https://splits.io/api/v3/games/255/categories/14"
+        );
     }
 
     #[test]
@@ -33,17 +42,26 @@ mod uris {
 
     #[test]
     fn get_user_uri_test() {
-        assert_eq!(&get_user_uri(555.to_string()), "https://splits.io/api/v3/users/555");
+        assert_eq!(
+            &get_user_uri(555.to_string()),
+            "https://splits.io/api/v3/users/555"
+        );
     }
 
     #[test]
     fn get_user_runs_uri_test() {
-        assert_eq!(&get_user_runs_uri(555.to_string()), "https://splits.io/api/v3/users/555/runs");
+        assert_eq!(
+            &get_user_runs_uri(555.to_string()),
+            "https://splits.io/api/v3/users/555/runs"
+        );
     }
 
     #[test]
     fn get_user_pbs_uri_test() {
-        assert_eq!(&get_user_pbs_uri(555.to_string()), "https://splits.io/api/v3/users/555/pbs");
+        assert_eq!(
+            &get_user_pbs_uri(555.to_string()),
+            "https://splits.io/api/v3/users/555/pbs"
+        );
     }
 
     #[test]
