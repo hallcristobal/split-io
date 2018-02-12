@@ -12,3 +12,6 @@ hyper = "0.11.18"
 hyper-tls = "0.1.2"
 futures = "0.1.18"
 tokio-core = "0.1.12"
+
+[dev-dependencies]
+tokio = "0.1.1"

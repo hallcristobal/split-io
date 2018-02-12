@@ -13,12 +13,13 @@ pub mod users;
 pub mod run;
 pub mod category;
 pub mod uris;
-pub mod calls;
+pub mod splits_io_client;
 
 pub use users::User;
 pub use games::Game;
 pub use category::Category;
 pub use date_time::DateTime;
+pub use splits_io_client::Client;
 
 pub trait Parse<T> {
     fn parse(raw: &str) -> std::result::Result<T, ()>;
